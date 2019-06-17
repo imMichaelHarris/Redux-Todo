@@ -1,20 +1,14 @@
 import React from "react";
 import "./App.css";
-import { connect } from "react-redux";
+import TodoList from "./components/TodoList";
 
 function App() {
   return (
     <div className="App">
-      {this.props.todos.map(todo => {
-        <h2>{todo.value}</h2>;
-      })}
+      <TodoList />
     </div>
   );
 }
-const mapStateToProps = state => {
-  return {
-    todos: state.todos
-  };
-};
+
 
 export default App;
