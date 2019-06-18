@@ -1,0 +1,22 @@
+.todo-form {
+  margin-top: 10px;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  input {
+    padding: 5px;
+    border-radius: 10px;
+    border-style: none;
+    transition: 0.3s all ease-in-out;
+    &:hover {
+      padding: 10px;
+    }
+    &:focus {
+      outline: none;
+      padding: 10px 20px;
+    }
+  }
+}

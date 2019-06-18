@@ -2,7 +2,7 @@ import React from "react";
 
 const Todo = props => {
   return (
-    <div>
+    <div className="todo">
       <h3>{props.todo.value}</h3>
     </div>
   );

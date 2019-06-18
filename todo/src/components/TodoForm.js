@@ -13,7 +13,8 @@ class TodoForm extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="todo-form">
+        <p>What's next?</p>
         <input type="text" name="name" value={this.state.name} />
       </div>
     );
