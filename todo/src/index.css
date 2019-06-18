@@ -1,7 +1,56 @@
 .todo-list {
-  background: red; }
+  background: crimson;
+  max-width: 800px;
+  min-height: 450px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px solid #fff;
+  border-top: none;
+  border-bottom: none;
+  font-family: "Indie Flower", cursive; }
+
+.completed {
+  text-decoration: line-through; }
+  .completed h3 {
+    opacity: .2; }
+
+.todo-form {
+  margin-top: 10px;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%); }
+  .todo-form input {
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    border-style: none;
+    transition: 0.3s all ease-in-out; }
+    .todo-form input:hover {
+      padding: 10px; }
+    .todo-form input:focus {
+      outline: none;
+      padding: 10px 20px; }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
 
 .App {
-  text-align: center; }
+  text-align: center;
+  background: #222;
+  height: 100vh; }
+
+header {
+  background: #222;
+  color: #fff;
+  height: 100px;
+  font-family: "Indie Flower", cursive; }
+  header h1 {
+    line-height: 100px;
+    font-size: 3rem; }
 
 /*# sourceMappingURL=index.css.map */
