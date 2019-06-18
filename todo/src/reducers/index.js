@@ -1,7 +1,7 @@
 const initialState = {
   todos: [
-    { value: "Test todo", completed: false },
-    { value: "Another todo", completed: false}
+    { value: "Test todo", completed: false, id: 0 },
+    { value: "Another todo", completed: false, id: 1 }
   ]
 };
 
