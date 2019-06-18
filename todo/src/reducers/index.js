@@ -16,6 +16,7 @@ export const reducer = (state = initialState, action) => {
         todos: [...state.todos, action.payload]
       };
     case TOGGLE_TODO:
+        console.log(action)
       return {
         ...state,
         todos: state.todos.map(todo => {

@@ -9,10 +9,14 @@
   border-bottom: none;
   font-family: "Indie Flower", cursive; }
 
+.todo {
+  display: flex;
+  justify-content: center; }
+
 .completed {
   text-decoration: line-through; }
   .completed h3 {
-    opacity: .2; }
+    opacity: 0.2; }
 
 .todo-form {
   margin-top: 10px;

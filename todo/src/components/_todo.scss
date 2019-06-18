@@ -1,7 +1,12 @@
+.todo {
+    display: flex;
+    justify-content: center;
+    
+
+}
 .completed {
     text-decoration: line-through;
-    h3{
-        opacity: .2;
-
+    h3 {
+      opacity: 0.2;
     }
-}
+  }

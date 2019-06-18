@@ -4,16 +4,16 @@ import { toggleTodo } from "../actions";
 
 import Todo from "./Todo";
 
-class TodoList extends React.Component {
-  render() {
+const TodoList = (props) => {
+  console.log('list', props)
     return (
       <div className="todo-list">
-        {this.props.todos.map(todo => (
-          <Todo todo={todo} key={todo.id} toggleTodo={this.props.toggleTodo} />
+        {props.todos.map(todo => (
+          <Todo todo={todo} key={todo.id} toggleTodo={props.toggleTodo} />
         ))}
       </div>
     );
-  }
+
 }
 const mapStateToProps = state => {
   return {
