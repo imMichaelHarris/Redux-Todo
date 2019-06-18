@@ -1,9 +1,16 @@
 import React from "react";
+import {connect} from 'react-redux';
+
+import {addTodo} from '../actions'
 
 class TodoForm extends React.Component {
   state = {
     name: ""
   };
+
+  submitTodo = e => {
+    e.preventDefault();
+  }
 
   handleChange = e => {
     this.setState({
@@ -13,7 +20,7 @@ class TodoForm extends React.Component {
 
   render() {
     return (
-      <div className="todo-form">
+      <form className="todo-form">
         <p>What's next?</p>
         <input
           type="text"
@@ -22,9 +29,14 @@ class TodoForm extends React.Component {
           autoComplete="off"
           onChange={this.handleChange}
         />
-      </div>
+        <button>Submit</button>
+      </form>
     );
   }
 }
-
-export default TodoForm;
+const mapStateToProps = state => {
+  return{
+    todos: state.todos
+  }
+}
+export default connect(mapStateToProps, { addTodo })(TodoForm);
