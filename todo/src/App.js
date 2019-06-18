@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.scss";
 import TodoList from "./components/TodoList";
+import TodoForm from "./components/TodoForm";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       </header>
 
       <TodoList />
+      <TodoForm />
     </div>
   );
 }
