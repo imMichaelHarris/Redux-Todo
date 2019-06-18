@@ -1,4 +1,7 @@
 import React from "react";
+import { connect } from "react-redux";
+import { toggleTodo} from '../actions'
+
 
 const Todo = props => {
   const {toggleTodo, todo} = props;
@@ -9,4 +12,4 @@ const Todo = props => {
   );
 };
 
-export default Todo;
+export default connect(null, {toggleTodo})(Todo);
