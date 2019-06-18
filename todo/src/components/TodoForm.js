@@ -25,9 +25,8 @@ class TodoForm extends React.Component {
   };
 
   render() {
-    console.log(this.props)
     return (
-      <form className="todo-form">
+      <form className="todo-form" onSubmit={this.submitTodo}>
         <p>What's next?</p>
         <input
           type="text"
@@ -36,7 +35,7 @@ class TodoForm extends React.Component {
           autoComplete="off"
           onChange={this.handleChange}
         />
-        <button onClick={this.submitTodo}>Submit</button>
+        <button>Submit</button>
       </form>
     );
   }
