@@ -10,6 +10,12 @@ class TodoForm extends React.Component {
 
   submitTodo = e => {
     e.preventDefault();
+    const newTodo = {
+      value: this.state.name,
+      completed: false,
+      id: Date.now()
+    }
+    this.props.addTodo(newTodo)
   }
 
   handleChange = e => {
@@ -19,6 +25,7 @@ class TodoForm extends React.Component {
   };
 
   render() {
+    console.log(this.props)
     return (
       <form className="todo-form">
         <p>What's next?</p>
@@ -29,7 +36,7 @@ class TodoForm extends React.Component {
           autoComplete="off"
           onChange={this.handleChange}
         />
-        <button>Submit</button>
+        <button onClick={this.submitTodo}>Submit</button>
       </form>
     );
   }
