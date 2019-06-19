@@ -3,15 +3,16 @@ import { connect } from "react-redux";
 
 import Todo from "./Todo";
 
-const TodoList = (props) => {
+class TodoList extends React.Component {
+  render() {
     return (
       <div className="todo-list">
-        {props.todos.map(todo => (
+        {this.props.todos.map(todo => (
           <Todo todo={todo} key={todo.id} />
         ))}
       </div>
     );
-
+  }
 }
 const mapStateToProps = state => {
   return {
@@ -19,6 +20,4 @@ const mapStateToProps = state => {
   };
 };
 
-export default connect(
-  mapStateToProps
-)(TodoList);
+export default connect(mapStateToProps)(TodoList);
