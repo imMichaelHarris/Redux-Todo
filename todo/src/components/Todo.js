@@ -6,8 +6,7 @@ const Todo = props => {
   const { toggleTodo, deleteTodo, todo } = props;
   return (
     <div className={`todo ${todo.completed ? "completed" : ""}`}>
-      <h3>{todo.value}</h3>
-      <button onClick={() => toggleTodo(todo.id)}>Done</button>
+      <h3 onClick={() => toggleTodo(todo.id)}>{todo.value}</h3>
       <button onClick={() => deleteTodo(todo.id)}>Delete</button>
     </div>
   );
