@@ -16,6 +16,7 @@ class TodoForm extends React.Component {
       id: Date.now()
     }
     this.props.addTodo(newTodo)
+    this.setState({name: ''})
   }
 
   handleChange = e => {
