@@ -8,6 +8,10 @@
   border-top: none;
   border-bottom: none;
   font-family: "Indie Flower", cursive; }
+  .todo-list h4 {
+    transition: .5s all ease-in-out; }
+  .todo-list .hide {
+    opacity: 0; }
 
 .todo {
   display: flex;
