@@ -11,7 +11,9 @@
 
 .todo {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  padding: 5px;
+  margin: 2px; }
 
 .completed {
   text-decoration: line-through; }
