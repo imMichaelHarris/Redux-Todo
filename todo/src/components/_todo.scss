@@ -10,23 +10,24 @@
     box-shadow: 0 2px 5px #000;
     transform: translateY(-2px);
   }
-  button {
-    padding: 5px;
-    border-radius: 5px;
-    margin: 0 5px;
-    background: tomato;
-    border: 1px solid black;
-    transition: all .2s ease-out;
 
-    &:hover {
-      cursor: pointer;
-      transform: scale(1.1);
-    }
-  }
 }
 .completed {
   text-decoration: line-through;
   h3 {
     opacity: 0.2;
+  }
+}
+button {
+  padding: 5px;
+  border-radius: 5px;
+  margin: 0 5px;
+  background: tomato;
+  border: 1px solid black;
+  transition: all .2s ease-out;
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.1);
   }
 }

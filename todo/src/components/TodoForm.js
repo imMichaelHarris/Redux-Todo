@@ -36,7 +36,7 @@ class TodoForm extends React.Component {
           autoComplete="off"
           onChange={this.handleChange}
         />
-        <button>Submit</button>
+        <button>Add</button>
       </form>
     );
   }
