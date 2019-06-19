@@ -1,5 +1,5 @@
-import { ADD_TODO } from "../actions";
-import { TOGGLE_TODO } from "../actions";
+import { ADD_TODO, TOGGLE_TODO, DELETE_TODO } from "../actions";
+
 
 const initialState = {
   todos: [
@@ -16,7 +16,6 @@ export const reducer = (state = initialState, action) => {
         todos: [...state.todos, action.payload]
       };
     case TOGGLE_TODO:
-        console.log(action)
       return {
         ...state,
         todos: state.todos.map(todo => {
@@ -30,6 +29,10 @@ export const reducer = (state = initialState, action) => {
           }
         })
       };
+      case DELETE_TODO:
+        return {
+          todos: state.todos.filter(todo => todo.id !== action.payload)
+        }
     default:
       return state;
   }
