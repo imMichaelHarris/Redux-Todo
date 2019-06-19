@@ -1,7 +1,6 @@
 import React from "react";
 import "./App.scss";
-import TodoList from "./components/TodoList";
-import TodoForm from "./components/TodoForm";
+import TodoContainer from './components/TodoContainer'
 
 function App() {
   return (
@@ -9,9 +8,8 @@ function App() {
       <header>
         <h1>Todo List</h1>
       </header>
+    <TodoContainer />
 
-      <TodoList />
-      <TodoForm />
     </div>
   );
 }

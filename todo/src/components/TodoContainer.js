@@ -1,14 +1,14 @@
-import React from 'react'
-import TodoList from './TodoList',
-import TodoForm from './TodoForm'
+import React from "react";
+import TodoList from "./TodoList";
+import TodoForm from "./TodoForm";
 
 const TodoContainer = () => {
-    return (
-        <>
-        <TodoList />
-        <TodoForm />
-        </>
-    )
-}
+  return (
+    <>
+      <TodoList />
+      <TodoForm />
+    </>
+  );
+};
 
 export default TodoContainer;
